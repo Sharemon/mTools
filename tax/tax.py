@@ -41,6 +41,7 @@ for i in range(12):
     print('{0}\t\t{1}/{2}'.format(round(tax), round(saGet), round(sumGet)))
 
 print('平均月工资: {0}'.format(round(sumGet/12)))
-
+print('平均月工资+公积金: {0}'.format(gjj*2+round(sumGet/12)))
+print('平均年工资: {0}'.format(sumGet+gjj*2*12))
 
 input("press any key to exit...")
