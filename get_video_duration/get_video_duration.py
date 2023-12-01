@@ -7,7 +7,7 @@ def calculate_duration(filename):
     fps = cap.get(cv2.CAP_PROP_FPS)
     fcount = cap.get(cv2.CAP_PROP_FRAME_COUNT)
 
-    duration = fcount / fps
+    duration = 0 if fps == 0 else fcount / fps
     return duration
 
 
@@ -24,6 +24,6 @@ if __name__ == '__main__':
                 raw_path = os.path.join(root, file)
                 print(raw_path)
                 duration = calculate_duration(raw_path)
-                outf.write(raw_path + "," + str(duration))
+                outf.write(raw_path + "," + str(duration) + "\n")
 
     outf.close()
