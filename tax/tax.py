@@ -65,5 +65,6 @@ if __name__ == "__main__":
     print('月工资: {0}'.format(round(sumGet/12)))
     print('月工资+公积金: {0}'.format(gjj*2+round(sumGet/12)))
     print('年工资: {0}'.format(sumGet+gjj*2*12+bonus_could_get))
+    print('年缴税: {0}'.format(tax_for_bonus+sumTax))
 
     input("press any key to exit...")
