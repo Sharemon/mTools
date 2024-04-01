@@ -54,7 +54,7 @@ if __name__ == "__main__":
         print('{0}\t\t{1}/{2}/{3}'.format(round(tax), round(salary_got), round(2*housing_fund), round(sum_of_money_got)))
 
     # calculate tax for annual_bonus
-    tax_for_bonus = calc_tax(salary_without_deduction + annual_bonus) - sum_of_tax
+    tax_for_bonus = calc_tax(annual_bonus)#calc_tax(salary_without_deduction + annual_bonus) - sum_of_tax
     bonus_could_get = annual_bonus - tax_for_bonus
     print("年终奖：{0}\t\t{1}".format(round(tax_for_bonus), round(bonus_could_get)))
     print("=================================================")
